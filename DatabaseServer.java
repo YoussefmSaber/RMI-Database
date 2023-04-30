@@ -1,7 +1,7 @@
 import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
 
-public class RMIServer {
+public class DatabaseServer {
 
     public static void main(String[] args) {
         try {

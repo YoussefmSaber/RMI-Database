@@ -6,7 +6,7 @@ import java.rmi.RemoteException;
 import java.util.List;
 import java.util.Random;
 
-public class RMIClient {
+public class DatabaseClient {
 
     public static void main(String[] args) {
         try {
