@@ -2,6 +2,7 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Iterator;
 
 public class EmployeeServiceImpl extends UnicastRemoteObject implements EmployeeService {
 
@@ -25,7 +26,13 @@ public class EmployeeServiceImpl extends UnicastRemoteObject implements Employee
     }
 
     public void deleteEmployee(Employee employee) throws RemoteException {
-        employees.remove(employee);
+        Iterator<Employee> iterator = employees.iterator();
+        while (iterator.hasNext()) {
+            Employee e = iterator.next();
+            if (e.getId() == employee.getId()) {
+                iterator.remove();
+            }
+        }
     }
 
     public Employee getEmployee(int id) throws RemoteException {

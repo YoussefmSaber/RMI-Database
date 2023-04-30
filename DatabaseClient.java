@@ -172,7 +172,7 @@ public class DatabaseClient {
             id = Integer.parseInt(reader.readLine());
         }
 
-        System.out.println("Employee with id " + employee.getId() + "deleted successfully");
+        System.out.println("Employee with id " + employee.getId() + " deleted successfully");
         employeeService.deleteEmployee(employee);
         exit(reader);
     }
