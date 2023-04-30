@@ -17,7 +17,7 @@ public class DatabaseClient {
 
             // Lookup for EmployeeService in the RMI Registry
             EmployeeService employeeService = (EmployeeService) Naming.lookup("rmi://localhost/EmployeeService");
-            System.out.println("RMI client is running...");
+            System.out.println("Client client is running...");
 
             Thread.sleep(1200);
             // Clear screen

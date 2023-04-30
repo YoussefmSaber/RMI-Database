@@ -12,7 +12,7 @@ public class DatabaseServer {
             System.out.print("\033[H\033[2J");
             System.out.flush();
             // Display Server is running
-            System.out.println("RMI server is running...");
+            System.out.println("Database server is running...");
         } catch (Exception e) {
             e.printStackTrace();
         }
